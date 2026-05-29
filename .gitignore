@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
