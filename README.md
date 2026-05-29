@@ -103,13 +103,14 @@ claude-flutter-mobile-app-development-skill/
 ├── .gitignore
 ├── examples/
 ├── assets/
-└── flutter-mobile-app-development/
-    ├── SKILL.md
-    ├── README.md
-    ├── resources/
-    ├── templates/
-    ├── checklists/
-    └── scripts/
+└── skills/
+    └── flutter-mobile-app-development/
+        ├── SKILL.md
+        ├── README.md
+        ├── resources/
+        ├── templates/
+        ├── checklists/
+        └── scripts/
 ```
 
 ---
@@ -117,7 +118,7 @@ claude-flutter-mobile-app-development-skill/
 ## Included in this Skill
 
 ```text
-flutter-mobile-app-development/
+skills/flutter-mobile-app-development/
 ├── SKILL.md
 ├── README.md
 ├── resources/
@@ -236,7 +237,7 @@ npx skills add dart-lang/skills --skill '*' --agent universal --yes
 
 - `--agent universal` installs to the shared `.agents/skills/` location.
 - `--agent claude-code` installs to Claude Code's `.claude/skills/` location.
-- This repository keeps the actual Claude Skill in `flutter-mobile-app-development/`.
+- This repository keeps the actual Claude Skill in `skills/flutter-mobile-app-development/`.
 - The Skills CLI discovers valid `SKILL.md` files with `name` and `description` frontmatter.
 
 ## Use with Claude Code
@@ -259,13 +260,13 @@ This community Skill works well as a higher-level mobile app development workflo
 This Skill includes a helper script to generate a feature-first Clean Architecture module.
 
 ```bash
-python flutter-mobile-app-development/scripts/scaffold_flutter_feature.py auth
+python skills/flutter-mobile-app-development/scripts/scaffold_flutter_feature.py auth
 ```
 
 With Cubit:
 
 ```bash
-python flutter-mobile-app-development/scripts/scaffold_flutter_feature.py orders --state cubit
+python skills/flutter-mobile-app-development/scripts/scaffold_flutter_feature.py orders --state cubit
 ```
 
 ---
